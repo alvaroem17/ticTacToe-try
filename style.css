@@ -9,9 +9,9 @@ main {
     margin: 0 auto;
     position: relative;
 }
-h1{
+h1,h3{
     margin: 2rem auto;
-    width: 10rem;
+    width: 15rem;
 }
 
 table {
@@ -43,4 +43,19 @@ button {
 }
 .selected:hover{
     background-color: rgb(11, 107, 73);
+}
+.win{
+    background-color: rgb(6, 194, 37);
+    color: beige;
+}
+.loose{
+    background-color: red;
+    color: beige;
+}
+
+.win:hover{
+    background-color: rgb(6, 194, 37);
+}
+.loose:hover{
+    background-color: red;
 }
