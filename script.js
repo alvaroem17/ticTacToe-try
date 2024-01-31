@@ -41,6 +41,8 @@ const checkWin = () => {
         return true
     }else if(board[0][2] === board[1][1] && board[0][2] === board[2][0] && board[0][2] !== '-') {
         return true
+    }else {
+        return false
     }
 }
 
@@ -92,9 +94,10 @@ const selectCell = (e) => {
     if(checkWin()) {
         playerWin()
     }
-    if(moveNumber > 9) {
+    if(!checkWin() && moveNumber > 8) {
         isOver = true
         playerWin()
+
     }
     console.log(player)
     changePlayer()
